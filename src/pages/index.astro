@@ -13,15 +13,14 @@ const data = await getLandingData();
 ---
 
 <Layout meta={data.meta}>
-  <Header data={data.headerData} />
-  <main class="flex flex-col justify-center items-center">
-    <div class="w-3/4">
-      <Hero data={data.heroData} />
-      <Services data={data.servicesData} />
-      <Adventajes data={data.adventajesData} />
-      <Brands data={data.brandsData} />
-      <Pricing data={data.pricingData} />
-    </div>
-    <Footer data={data.footerData} />
-  </main>
+	<Header data={data.headerData} />
+  	<main class="flex flex-col justify-center items-center">
+    	<div class="w-3/4">
+			<Pricing data={data.pricingData} />
+			<!-- 
+				<Adventajes data={data.adventajesData} />
+			-->
+    	</div>
+    	<Footer data={data.footerData} />
+  	</main>
 </Layout>
